@@ -1,0 +1,188 @@
+/* ====== BACKGROUND ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#11212D 50%, #386C93 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====== NAVBAR ====== */
+.navbar-principal {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.navbar-logo {
+    display: flex;
+    border: 1px solid #4A5C6A;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.logo-btn {
+    padding: 12px 40px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.tech {
+    background: #E5E5E5;
+    color: #11212D;
+}
+
+.store {
+    background: transparent;
+    color: white;
+}
+
+/* ====== LOGIN ====== */
+.login-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.subtitulo {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: -8px;
+}
+
+.login-form {
+    width: 90%;
+    max-width: 320px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    background: #0D1A25;
+    padding: 12px 15px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-group input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: white;
+}
+
+.toggleSenha {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+}
+
+/* BOTÃO */
+.btn {
+    padding: 12px;
+    background: #0D1A25;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* REGISTRO */
+.registro-texto {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.registre-se {
+    color: white;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(13, 26, 37, 0.75);
+  padding: 12px 20px; /* mais compacto */
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #E5E5E5;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4AC0FF;
+}
+
+.footer-content p {
+  margin: 2px 0;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.icon {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.github-icon svg, .telefone-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* Mensagem de feedback de cópia */
+.copiado-msg {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  color: #4AC0FF;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px 15px;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+}
