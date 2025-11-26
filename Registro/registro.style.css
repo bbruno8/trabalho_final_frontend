@@ -1,94 +1,116 @@
-/* ====== BACKGROUND ====== */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#11212D 50%, #386C93 100%);
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#11212D 50%, #386C93 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* ====== NAVBAR ====== */
 .navbar-principal {
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
 .navbar-logo {
-    display: flex;
-    border: 1px solid #4A5C6A;
-    border-radius: 6px;
-    overflow: hidden;
+  display: flex;
+  border: 1px solid #4A5C6A;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .logo-btn {
-    padding: 12px 40px;
-    font-weight: bold;
-    font-size: 22px;
+  padding: 12px 40px;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .tech {
-    background: #E5E5E5;
-    color: #11212D;
+  background: #E5E5E5;
+  color: #11212D;
 }
 
 .store {
-    background: transparent;
-    color: white;
+  background: transparent;
+  color: white;
 }
 
-/* ====== LOGIN ====== */
-.login-container {
-    text-align: center;
-    margin-top: 10px;
+/* ===== REGISTRO ===== */
+.registro-container {
+  text-align: center;
+  margin-top: 10px;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .subtitulo {
-    font-size: 13px;
-    opacity: 0.8;
-    margin-top: -8px;
+  font-size: 13px;
+  opacity: 0.8;
+  margin-top: -8px;
 }
 
-.login-form {
-    width: 90%;
-    max-width: 320px;
-    margin: 35px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+.registro-form {
+  width: 90%;
+  max-width: 320px;
+  margin: 35px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .input-group {
-    background: #0D1A25;
-    padding: 12px 15px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  background: #0D1A25;
+  padding: 12px 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .input-group input {
-    flex: 1;
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 15px;
-    color: white;
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: white;
 }
 
+.input-group input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Toggle Senha com Imagem */
 .toggleSenha {
-    cursor: pointer;
-    position: absolute;
-    right: 12px;
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+}
+
+.toggleSenha .icone-senha {
+  width: 28px;
+  height: 28px;
+  max-width: 28px;
+  max-height: 28px;
+  object-fit: contain;
+  opacity: 0.65;
+  transition: opacity 0.2s ease;
+  display: block;
+}
+
+.toggleSenha:hover .icone-senha {
+  opacity: 1;
 }
 
 /* BOTÃO */
@@ -117,26 +139,14 @@ h1 {
   background: #0D1A25;
 }
 
-/* REGISTRO */
-.registro-texto {
-    margin-top: 12px;
-    font-size: 14px;
-}
-
-.registre-se {
-    color: white;
-    font-weight: bold;
-}
-
 /* ===== FOOTER ===== */
 .footer {
   margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: rgba(13, 26, 37, 0.75);
-  padding: 12px 20px; /* mais compacto */
+  padding: 12px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: #E5E5E5;
 }
@@ -192,6 +202,10 @@ h1 {
   color: #4AC0FF;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+.copiado-msg.show {
+  opacity: 1;
 }
 
 /* ===== RESPONSIVO ===== */
